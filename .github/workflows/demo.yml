@@ -5,9 +5,15 @@ on:
     branches: main
     
 jobs:
-  hello-world:
+  build:
     runs-on: ubuntu-24.04
     steps:
-      - name: 'Hello world'
+      - name: 'Build'
         run: |
-          echo 'Hello'
+          echo 'Build application...'
+
+  deploy:
+     runs-on: ubuntu-24.04
+     steps:
+       - name:  "Deploy"
+         run: echo "Deploy app"
